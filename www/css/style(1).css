@@ -1,0 +1,94 @@
+/*
+Theme Name:     PEACE-P
+Theme URI:      http://peace-p.org/
+Description:    Custom theme for PEACE-P project
+Author:         S.E.a.P.
+Author URI:     http://seap.cis.uab.edu/
+Template:       wordpress-bootstrap
+Version:        0.1.0
+*/
+@import url("../wordpress-bootstrap/style.css");
+
+<!-- #607 klh 20130926 -->
+/* layout */
+@-webkit-viewport{width:device-width}
+@-moz-viewport{width:device-width}
+@-ms-viewport{width:device-width}
+@-o-viewport{width:device-width}
+@viewport{width:device-width}
+
+#header-logo {
+     background-image: url('/content/media/2013/04/FHS.Perinatal.APEC_.Logo_.030513.ls_-e1364871108314.png');
+     width: 275px;
+    height: 248px;
+
+}
+
+.navbar .brand{
+    color: #ffffff !important;
+  /*klh 20130613: add padding to "APEC Guidlines" title below wp nav bar & above logo*/
+    padding-left: 25px;
+
+}
+
+
+
+#main article{
+    margin-bottom: 0px;
+    max-height: 300px;
+}
+
+a.help{
+	color:#999999;
+	margin-left: 30px;
+	padding-right: 115px;
+	border-right: 1px solid #999999;
+}
+
+a.contact{
+	color:#999999;
+	float:right;
+ /*klh 20130614: changing margin (from 30 to 20) for contact us in the navigation menu*/
+	margin-right:20px;
+
+}
+
+
+h3 {
+color:#8c2456;
+border-bottom: 2px dotted #8c2456;
+}
+
+.jumbotron{
+border-bottom: 4px dotted #71c8de;
+}
+
+h1, h2, h3, h4, h5, h6 {
+font-family: Geneva, “Lucida Sans”, “Lucida Grande”, “Lucida Sans Unicode”, Verdana, sans-serif;
+font-size:1.75em;
+line-height: 1em;
+}
+
+#inner-header > div > div > div > nav > a.btn-back{
+	clear:both;
+	float:left;
+	padding-top: 7px;
+	padding-bottom: 7px;
+}
+
+
+
+div.page-header {
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+.page-header-top {
+	margin-bottom:0;
+}
+
+.box-shadow  {
+	box-shadow: 0px 0px 10px 3px rgba(227, 163, 163, 0.75);
+	-moz-box-shadow: 0px 0px 10px 3px rgba(227, 163, 163, 0.75);
+	-webkit-box-shadow: 0px 0px 10px 3px rgba(227, 163, 163, 0.75);
+}
