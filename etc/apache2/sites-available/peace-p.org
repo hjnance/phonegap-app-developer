@@ -1,0 +1,33 @@
+<VirtualHost *:80>
+	ServerAdmin sysadm@cis.uab.edu
+
+	DocumentRoot /var/www/peace-p.org
+
+	<Directory /var/www/peace-p.org/>
+		AllowOverride All
+                Order Deny,Allow
+                Allow from all
+        </Directory>
+
+	Alias /content/ "/srv/www/peace-p.org/"
+
+        <Directory /srv/www/peace-p.org/>
+                Options Indexes MultiViews FollowSymLinks
+
+                AllowOverride All
+                Order deny,allow
+                Allow from all
+        </Directory>
+
+	Alias /survey/ "/var/www/survey/"
+
+        <Directory /var/www/peace-p.org/>
+               AllowOverride All
+               Order Deny,Allow
+               Allow from all
+        </Directory>
+
+	LogLevel warn
+
+	CustomLog ${APACHE_LOG_DIR}/access.log combined
+</VirtualHost>
